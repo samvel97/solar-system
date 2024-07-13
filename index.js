@@ -73,8 +73,8 @@ class CanvasClass {
         this.#ctx.drawImage(this.#sun, this.sunX - 100, this.sunY - 100);
         this.#drawStars()
 
-        this.radiance += 0.01;
-        this.moonRadiance += 0.03;
+        this.radiance += 0.00027;
+        this.moonRadiance += 0.01;
         const earthX = this.sunX + 250 * Math.cos(this.radiance);
         const earthY = this.sunY + 250  * Math.sin(this.radiance);
         const moonX = earthX + 60 * Math.cos(this.moonRadiance);
